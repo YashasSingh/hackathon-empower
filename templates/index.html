@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-lg">
+      <h1 class="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">Planter</h1>
+
+      <form action="/" method="post" class="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
+        <p class="text-center text-lg font-medium">Advisor</p>
+
+        <div>
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" placeholder="Age" />
+        </div>
+
+        <div>
+          <label for="grade">Grade level</label>
+          <select name="grade" id="grade" class="mt-1.5 w-full rounded-lg border-gray-300 text-gray-700 sm:text-sm">
+            <option value="Freshman">Freshman</option>
+            <option value="Sophomore">Sophomore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="weighted_gpa">GPA Weighted</label>
+          <input type="text" name="weighted_gpa" id="weighted_gpa" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" placeholder="GPA Weighted" />
+        </div>
+
+        <div>
+          <label for="unweighted_gpa">GPA Unweighted</label>
+          <input type="text" name="unweighted_gpa" id="unweighted_gpa" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" placeholder="GPA Unweighted" />
+        </div>
+
+        <div>
+          <label for="race">Race</label>
+          <select name="race" id="race" class="mt-1.5 w-full rounded-lg border-gray-300 text-gray-700 sm:text-sm">
+            <option value="white">White</option>
+            <option value="black">Black or African American</option>
+            <option value="native American">American Indian or Alaska Native</option>
+            <option value="asian">Asian</option>
+            <option value="native Hawaiian">Native Hawaiian or Other Pacific Islander</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="income">Total Family Income</label>
+          <input type="text" name="income" id="income" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" placeholder="Rough Estimation" />
+        </div>
+
+        <div>
+          <label for="sat">SAT Score</label>
+          <input type="text" name="sat" id="sat" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" placeholder="Type 'not taken' if not taken" />
+        </div>
+
+        <div>
+          <label for="act">ACT Score</label>
+          <input type="text" name="act" id="act" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" placeholder="Type 'not taken' if not taken" />
+        </div>
+
+        <div>
+          <label for="aid">Any financial aid received</label>
+          <input type="text" name="aid" id="aid" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" placeholder="Do you receive any financial aid?" />
+        </div>
+
+        <div>
+          <label for="interest">What are you interested in?</label>
+          <input type="text" name="interest" id="interest" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" placeholder="Type 'not sure' if you do not know" />
+        </div>
+
+        <div>
+          <label for="courses">Have you taken any hard classes (AP/IB)?</label>
+          <input type="text" name="courses" id="courses" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" placeholder="List the course along with the score" />
+        </div>
+
+        <div>
+          <label for="location">Location</label>
+          <input type="text" name="location" id="location" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" placeholder="Where do you live" />
+        </div>
+
+        <div>
+          <label for="transcript">Upload your transcript</label>
+          <input type="file" name="transcript" id="transcript" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" />
+        </div>
+
+        <button type="submit" class="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white">Submit</button>
+      </form>
+
+      <form action="/identify" enctype="multipart/form-data" method="post" class="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
+        <p class="text-center text-lg font-medium">Resume Upgrader</p>
+
+        <div>
+          <label for="resume" class="sr-only">Upload your Resume</label>
+          <input type="file" name="resume" id="resume" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" />
+        </div>
+
+        <button type="submit" class="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white">Upload</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
