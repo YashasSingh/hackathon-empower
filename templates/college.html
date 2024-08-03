@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-lg">
+        <h1 class="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">Recommended Colleges</h1>
+        <div class="mt-6 space-y-4">
+            {% for college in info %}
+            <div class="block rounded-lg p-4 shadow-sm shadow-indigo-100 w-full">
+                <div class="mt-2">
+                    <dl>
+                        <div>
+                            
+                            <dd class="font-medium">{{ college }}</dd>
+                        </div>
+                    </dl>
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

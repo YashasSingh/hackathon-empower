@@ -12,10 +12,10 @@
 
   <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-lg">
-      <h1 class="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">Planter</h1>
+      <h1 class="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">AI Advisor</h1>
 
-      <form action="/" method="post" class="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
-        <p class="text-center text-lg font-medium">Advisor</p>
+      <form action="/" method="post" enctype="multipart/form-data" class="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
+        <p class="text-center text-lg font-medium">Student Input</p>
 
         <div>
           <label for="age">Age</label>
@@ -93,18 +93,16 @@
           <input type="file" name="transcript" id="transcript" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" />
         </div>
 
-        <button type="submit" class="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white">Submit</button>
-      </form>
-
-      <form action="/identify" enctype="multipart/form-data" method="post" class="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
-        <p class="text-center text-lg font-medium">Resume Upgrader</p>
-
         <div>
-          <label for="resume" class="sr-only">Upload your Resume</label>
+          <label for="resume" >Upload your Resume</label>
           <input type="file" name="resume" id="resume" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-sm" />
         </div>
 
-        <button type="submit" class="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white">Upload</button>
+        <div style="text-align: center;">
+          <button type="submit" formaction="/result" class="inline-block rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white m-2">Opportunities Advisor</button>
+          <button type="submit" formaction="/college" class="inline-block rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white m-2">College Advising</button>
+          <button type="submit" formaction="/identify" class="inline-block rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white m-2">Resume Upgrader</button>
+        </div>
       </form>
     </div>
   </div>
